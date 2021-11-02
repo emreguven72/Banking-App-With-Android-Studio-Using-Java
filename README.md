@@ -1,4 +1,4 @@
-# Android-Banking-App-With-Java
+# Banking-App-With-Android-Studio-Using-Java
 Full Function Android Banking App With Database
 ![image](https://user-images.githubusercontent.com/81997444/117656212-be44dd80-b1a0-11eb-83a2-550c8250f1c5.png)
 ![image](https://user-images.githubusercontent.com/81997444/117656260-d0bf1700-b1a0-11eb-8c8e-12bc499dbe50.png)
