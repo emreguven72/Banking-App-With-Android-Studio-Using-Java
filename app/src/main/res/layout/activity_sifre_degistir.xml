@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E61313"
+    tools:context=".SifreDegistirActivity">
+
+    <Button
+        android:id="@+id/sifreDegistirOnaylaButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="changePassword"
+        android:text="ONAYLA"
+        app:layout_constraintBottom_toTopOf="@+id/sifreDegistirIptalButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sifreDegistirIptalButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="goBack"
+        android:text="İPTAL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/eskiSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Eski Şifre"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/sifreDegistirEskiSifreText"
+        app:layout_constraintStart_toStartOf="@+id/sifreDegistirEskiSifreText" />
+
+    <TextView
+        android:id="@+id/yeniSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Yeni Şifre"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/sifreDegistirYeniSifreText"
+        app:layout_constraintStart_toStartOf="@+id/sifreDegistirYeniSifreText" />
+
+    <EditText
+        android:id="@+id/sifreDegistirYeniSifreText"
+        android:layout_width="286dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="80dp"
+        android:background="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/sifreDegistirOnaylaButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/sifreDegistirEskiSifreText"
+        android:layout_width="286dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="50dp"
+        android:background="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/yeniSifre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

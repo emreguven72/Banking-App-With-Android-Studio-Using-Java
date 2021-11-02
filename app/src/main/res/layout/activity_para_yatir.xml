@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E61313"
+    tools:context=".ParaYatirActivity">
+
+    <Button
+        android:id="@+id/paraYatirButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="paraYatir"
+        android:text="PARA YATIR"
+        app:layout_constraintBottom_toTopOf="@+id/paraYatirIptalButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/paraYatirMiktarText"
+        android:layout_width="286dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="80dp"
+        android:background="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/paraYatirButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/paraYatirIptalButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="goBack"
+        android:text="İPTAL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Yatıracağınız Miktar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/paraYatirMiktarText"
+        app:layout_constraintStart_toStartOf="@+id/paraYatirMiktarText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E61313"
+    tools:context=".MainActivity2" >
+
+    <TextView
+        android:id="@+id/detayAdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayImage" />
+
+    <ImageView
+        android:id="@+id/detayImage"
+        android:layout_width="118dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mr" />
+
+    <ImageButton
+        android:id="@+id/detayParaCekButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="paraCek"
+        app:layout_constraintBottom_toTopOf="@+id/detayParaYatirButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/paracek" />
+
+    <ImageButton
+        android:id="@+id/detayParaYatirButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="paraYatir"
+        app:layout_constraintBottom_toTopOf="@+id/detayHavaleButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/parayatir" />
+
+    <ImageButton
+        android:id="@+id/detayHavaleButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="havale"
+        app:layout_constraintBottom_toTopOf="@+id/detaySifreButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eft" />
+
+    <ImageButton
+        android:id="@+id/detaySifreButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="sifreOlustur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/detayAyarlarButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="ayarlar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageButton
+        android:id="@+id/detayKrediButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="krediHesapla"
+        app:layout_constraintBottom_toTopOf="@+id/detayAyarlarButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/kredi" />
+
+    <ImageButton
+        android:id="@+id/detayBorcButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="borcGoster"
+        app:layout_constraintBottom_toTopOf="@+id/detayKrediButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/borc" />
+
+    <ImageButton
+        android:id="@+id/detayHesapDetayButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="hesapDetay"
+        app:layout_constraintBottom_toTopOf="@+id/detayBorcButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bank" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para Çek"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/detayParaCekButton"
+        app:layout_constraintStart_toStartOf="@+id/detayParaCekButton" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para Yatır"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/detayParaYatirButton"
+        app:layout_constraintStart_toStartOf="@+id/detayParaYatirButton" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borçları Göster"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/detayBorcButton"
+        app:layout_constraintStart_toStartOf="@+id/detayBorcButton" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kredi Hesapla"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/detayKrediButton"
+        app:layout_constraintStart_toStartOf="@+id/detayKrediButton" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Havale İşlemleri"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/detayHavaleButton"
+        app:layout_constraintStart_toStartOf="@+id/detayHavaleButton" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rastgele Şifre Oluştur"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/detaySifreButton"
+        app:layout_constraintStart_toStartOf="@+id/detaySifreButton" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Ayarları"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/detayAyarlarButton"
+        app:layout_constraintStart_toStartOf="@+id/detayAyarlarButton" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesap Detayları"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/detayHesapDetayButton"
+        app:layout_constraintStart_toStartOf="@+id/detayHesapDetayButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

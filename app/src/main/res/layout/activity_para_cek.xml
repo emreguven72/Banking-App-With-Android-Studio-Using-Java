@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E61313"
+    tools:context=".ParaCekActivity">
+
+    <Button
+        android:id="@+id/paraCekIptalButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="iptal"
+        android:text="İPTAL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/paraCekGonderButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="paraCek"
+        android:text="PARA ÇEK"
+        app:layout_constraintBottom_toTopOf="@+id/paraCekIptalButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Çekeceğiniz Miktar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/paraCekMiktarText"
+        app:layout_constraintStart_toStartOf="@+id/paraCekMiktarText" />
+
+    <EditText
+        android:id="@+id/paraCekMiktarText"
+        android:layout_width="286dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="80dp"
+        android:background="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/paraCekGonderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

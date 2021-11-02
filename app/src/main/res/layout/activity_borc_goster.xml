@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E61313"
+    tools:context=".BorcGosterActivity">
+
+    <Button
+        android:id="@+id/borcGosterOdeButton"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="100dp"
+        android:background="#716969"
+        android:backgroundTint="#716969"
+        android:backgroundTintMode="add"
+        android:onClick="borcOde"
+        android:text="Tüm Borçları Öde"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borcGosterBorcText" />
+
+    <Button
+        android:id="@+id/borcGosterBackButton"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="80dp"
+        android:background="#716969"
+        android:backgroundTint="#716969"
+        android:backgroundTintMode="add"
+        android:onClick="goBack"
+        android:text="GERİ DÖN"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/borcGosterBorcText"
+        android:layout_width="366dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="150dp"
+        android:background="#000000"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#E61313"
+        android:text="Toplam Borç"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/borcGosterBorcText"
+        app:layout_constraintStart_toStartOf="@+id/borcGosterBorcText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

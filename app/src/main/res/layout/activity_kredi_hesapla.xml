@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E61313"
+    tools:context=".KrediHesaplaActivity">
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="35dp"
+        android:text="6"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/krediHesaplaVadeSeekBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="35dp"
+        android:text="12"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginBottom="35dp"
+        android:text="18"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/krediHesaplaVadeSeekBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="35dp"
+        android:text="24"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginBottom="35dp"
+        android:text="30"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/krediHesaplaVadeSeekBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="345dp"
+        android:layout_marginTop="35dp"
+        android:text="36"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView50" />
+
+    <SeekBar
+        android:id="@+id/krediHesaplaKrediSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="364dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        android:max="20"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/krediHesaplaVadeSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="364dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="80dp"
+        android:max="12"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/krediHesaplaKrediSeekBar" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="24dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="35dp"
+        android:text="5000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/krediHesaplaKrediSeekBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="35dp"
+        android:text="10000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/krediHesaplaKrediSeekBar" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="35dp"
+        android:text="20000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/krediHesaplaKrediSeekBar" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="218dp"
+        android:layout_marginTop="35dp"
+        android:text="30000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/krediHesaplaKrediSeekBar" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="35dp"
+        android:text="40000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/krediHesaplaKrediSeekBar" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="35dp"
+        android:text="50000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/krediHesaplaKrediSeekBar" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginBottom="35dp"
+        android:text="15000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/krediHesaplaKrediSeekBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="35dp"
+        android:text="25000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/krediHesaplaKrediSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginBottom="35dp"
+        android:text="35000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/krediHesaplaKrediSeekBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="315dp"
+        android:layout_marginBottom="35dp"
+        android:text="45000"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/krediHesaplaKrediSeekBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="13dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/krediHesaplaKrediSeekBar" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Kredi Tutarı"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/krediHesaplaKrediSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/krediHesaplaKrediSeekBar" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Vade"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView50"
+        app:layout_constraintStart_toStartOf="@+id/krediHesaplaVadeSeekBar" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Aylık Ödemeniz"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/krediHesaplaAylikOdemeText"
+        app:layout_constraintStart_toStartOf="@+id/krediHesaplaAylikOdemeText" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Faiz Oranı"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/krediHesaplaFaizOraniText"
+        app:layout_constraintStart_toStartOf="@+id/krediHesaplaFaizOraniText" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Toplam Geri Ödemeniz"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/krediHesaplaToplamOdemeText"
+        app:layout_constraintStart_toStartOf="@+id/krediHesaplaToplamOdemeText" />
+
+    <Button
+        android:id="@+id/krediHesaplaHesaplaButton"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:onClick="hesapla"
+        android:text="Hesapla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/krediHesaplaVadeSeekBar" />
+
+    <Button
+        android:id="@+id/krediHesaplaBasvurButton"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="basvur"
+        android:text="Krediye Başvur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/krediHesaplaFaizOraniText" />
+
+    <Button
+        android:id="@+id/krediHesaplaIptalButton"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="goBack"
+        android:text="İptal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/krediHesaplaBasvurButton" />
+
+    <EditText
+        android:id="@+id/krediHesaplaAylikOdemeText"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="190dp"
+        android:background="#000000"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/krediHesaplaVadeSeekBar" />
+
+    <EditText
+        android:id="@+id/krediHesaplaToplamOdemeText"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="190dp"
+        android:background="#000000"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/krediHesaplaFaizOraniText" />
+
+    <EditText
+        android:id="@+id/krediHesaplaFaizOraniText"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="190dp"
+        android:background="#000000"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

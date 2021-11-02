@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E61313"
+    tools:context=".HesapDetayActivity">
+
+    <Button
+        android:id="@+id/hesapDetayBackButton"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="80dp"
+        android:background="#716969"
+        android:backgroundTint="#716969"
+        android:backgroundTintMode="add"
+        android:onClick="goBack"
+        android:text="GERİ DÖN"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/hesapDetayAdSoyadText"
+        android:layout_width="366dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="100dp"
+        android:background="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hesapDetayBakiyeText"
+        android:layout_width="366dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="80dp"
+        android:background="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesapDetayAdSoyadText" />
+
+    <EditText
+        android:id="@+id/hesapDetayBorcText"
+        android:layout_width="366dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="80dp"
+        android:background="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesapDetayBakiyeText" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#E61313"
+        android:text="Ad Soyad"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/hesapDetayAdSoyadText"
+        app:layout_constraintStart_toStartOf="@+id/hesapDetayAdSoyadText" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#E61313"
+        android:text="Bakiye"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/hesapDetayBakiyeText"
+        app:layout_constraintStart_toStartOf="@+id/hesapDetayBakiyeText" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#E61313"
+        android:text="Borç"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/hesapDetayBorcText"
+        app:layout_constraintStart_toStartOf="@+id/hesapDetayBorcText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
